@@ -1,4 +1,4 @@
-<h1 align="center" style="color: green">CHALLENGE DA SPRINT 5</h1>
+<h1 align="center" style="color: green">CHALLENGE DA SPRINT 6</h1>
 
 [![NPM](https://img.shields.io/npm/l/react)](https://github.com/gabrielvanz/RealityStone_Gabriel_Compass/blob/develop/LICENSE)
 
@@ -43,6 +43,10 @@
 @checkout
 ```
 
+<h3>Relacionados</h3>
+
+**<a href="#">Plano de Teste</a>**
+**<a href="#">Mapa Mental</a>**
 
 <h2>Tecnologias utilizadas</h2>
 

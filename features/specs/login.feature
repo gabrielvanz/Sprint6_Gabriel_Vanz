@@ -10,11 +10,6 @@ Funcionalidade: Login via E-mail
     Contexto:
         Dado que esteja na página de autenticação
 
-    @login_validate_only
-    Cenário: Validar login do usuário
-        Quando realizar login com email e senha válidos
-        Então  deverá logar o usuário
-
     @login_validate
     Esquema do Cenário: Validar login do usuário
         Quando realizar login com "<email>" e "<password>"
@@ -27,11 +22,6 @@ Funcionalidade: Login via E-mail
         |teste@compass.com  |1234      |Invalid password.                                                                         |
         |teste@compass.com  |12345678  |Welcome to your account. Here you can manage all of your personal information and orders. |
 
-    @login_forgot_password_with_valid_email
-    Cenário: Validar recuperação de senha
-        Quando realizar a recuperação de senha com um email válido
-        Então devera aparecer a mensagem "A confirmation email has been sent to your address"
-    
     @login_forgot_password
     Esquema do Cenário: Validar recuperação de senha
         Quando realizar a recuperação de senha com o "<email>"

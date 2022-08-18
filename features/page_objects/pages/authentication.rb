@@ -7,11 +7,8 @@ module Pages
         
         # Registration
         section :registration, Sections::Registration, '#authentication'
-    z
-        def set_email_adress(email)
-            registration.input_email.set email
-            registration.btn_create_account.click
-        end
+
+        $user_email = Factory::Dynamic.user_for_registering[:email] #Variável de e-mails dinâmicos
     
         def set_field_entries(name,lastname,password,address,city,post_code,telephone)
            registration.name.set name
