@@ -1,18 +1,24 @@
 Dado('que o usuário esteja logado') do
     steps %{
         Dado que esteja na página de autenticação
-        Quando realizar login com email e senha válidos
-        Então  deverá logar o usuário
+        Quando for preenchido corretamento os dados de login
+        Então deverá logar o usuário
     }
 end
 
 Dado('que o produto tenha sido adicionado ao carrinho') do
     steps %{
-        Dado que esteja na home
-        E realizar uma busca por um produto existente
-        E adicionar produto da vitrine ao carrinho
+        Dado que esteja na vitrine de produtos
+        Quando adicionar produto da vitrine ao carrinho
+        Então o produto deverá ser adicionado ao carrinho com sucesso pela vitrine
     }
 end
+
+# Dado que esteja na home
+#         E realizar uma busca por um produto existente
+#         Quando acessar a página do produto
+#         E adicionar o produto ao carrinho
+#         Então o produto deverá ser adicionado ao carrinho com sucesso
 
 Quando('fazer checkout do produto pelo carrinho') do
     sleep 0.5

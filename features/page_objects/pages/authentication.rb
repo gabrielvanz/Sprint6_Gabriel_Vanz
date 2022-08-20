@@ -5,11 +5,15 @@ module Pages
     class Authentication < SitePrism::Page
         set_url '/index.php?controller=authentication&back=my-account#account-creation'
         
-        # Registration
+    # Registration
         section :registration, Sections::Registration, '#authentication'
 
-        $user_email = Factory::Dynamic.user_for_registering[:email] #Variável de e-mails dinâmicos
-    
+        # Variável de e-mails dinâmicos
+        $user_email = Factory::Dynamic.user_for_registering[:email]
+        
+        # Contador para o esquema de cenário do cadastro do e-mail
+        $contador = 0  
+
         def set_field_entries(name,lastname,password,address,city,post_code,telephone)
            registration.name.set name
            registration.lastname.set lastname
@@ -21,7 +25,7 @@ module Pages
            registration.telephone.set telephone
         end
         
-        # Login
+    # Login
         section :login, Sections::Login, 'body'
            
         def set_user_configs(email,password)

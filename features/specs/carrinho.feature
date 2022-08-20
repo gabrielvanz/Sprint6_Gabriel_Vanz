@@ -29,3 +29,15 @@ Funcionalidade: Busca
     Cenário: Remover produto no carrinho pela modal do carrinho na home
         Quando clicar na lixeira de um produto existente no carrinho no modal do carrinho
         Então deverá remover o produto do modal do carrinho
+
+    @cart_page_checkout_validate
+    Cenário: Validar a finalização da compra pela página do carrinho
+        Dado que esteja na página do carrinho
+        Quando clicar em Proceed to checkout
+        Então deverá avançar para a autenticação no checkout
+    
+    @cart_modal_checkout_validate
+    Cenário: Validar a finalização da compra pela modal do carrinho
+        Dado que esteja na home
+        Quando clicar em checkout no modal do carrinho
+        Então deverá avançar para a página do carrinho

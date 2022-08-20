@@ -18,5 +18,6 @@ module Pages
         element  :exit_modal_page, "span.cross"
         element  :cart_remove_product_modal, "a[class='ajax_cart_block_remove_link']"
         element  :cart_item_modal, ".products .first_item"
+        element  :modal_cart_checkout, "#button_order_cart"
     end
 end

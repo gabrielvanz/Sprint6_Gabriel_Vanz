@@ -12,7 +12,6 @@ end
 Quando('adicionar produto da vitrine ao carrinho') do
     @product_showcase = Pages::ProductShowcase.new
     @product_showcase.products_add_cart(1)
-    sleep 1
 end
 
 Então('o produto deverá ser adicionado ao carrinho com sucesso pela vitrine') do

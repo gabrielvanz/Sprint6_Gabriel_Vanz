@@ -7,11 +7,9 @@ Funcionalidade: Login via E-mail
     QUERO me autenticar na aplicação
     PARA realizar compras
 
-    Contexto:
+    @login_validate_home
+    Esquema do Cenário: Validar login pela Home
         Dado que esteja na página de autenticação
-
-    @login_validate
-    Esquema do Cenário: Validar login do usuário
         Quando realizar login com "<email>" e "<password>"
         Então deverá retornar a "<msg>" 
         
@@ -22,8 +20,16 @@ Funcionalidade: Login via E-mail
         |teste@compass.com  |1234      |Invalid password.                                                                         |
         |teste@compass.com  |12345678  |Welcome to your account. Here you can manage all of your personal information and orders. |
 
+    @login_validate_checkout
+    Cenário: Validar login pelo Checkout
+        Dado que o produto tenha sido adicionado ao carrinho
+        E o usuário tenha finalizado a compra pelo carrinho
+        Quando for preenchido corretamento os dados de login
+        Então deverá avançar para a prossima etapa do Checkout
+
     @login_forgot_password
     Esquema do Cenário: Validar recuperação de senha
+        Dado que esteja na página de autenticação
         Quando realizar a recuperação de senha com o "<email>"
         Então devera retornar a "<msg>"
     
