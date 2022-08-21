@@ -2,7 +2,7 @@
 
 @regression
 @checkout
-Funcionalidade: Checkout via carrinho
+Funcionalidade: Checkout
     COMO um usuário do Ecommerce Automation Pratice  
     QUERO fazer o checkout de um produto no carrinho
     PARA realizar a compra
@@ -10,9 +10,27 @@ Funcionalidade: Checkout via carrinho
     Contexto:
         Dado que o usuário esteja logado
         E que o produto tenha sido adicionado ao carrinho
-
-    Cenário: 
         Quando fazer checkout do produto pelo carrinho
-        E o termo de serviço estiver marcado
+
+    @checkout_validate
+    Cenário: Validar Checkout
+        Quando marcar os termos de serviço
+        E prosseguir com a finalização da compra
         E selecionar o meio de pagamento
+        E confirmar o pagamento
         Então deverá finalizar o checkout com sucesso
+
+    @checkout_payment_validate
+    Cenário: Validar a forma de pagamento
+        Quando marcar os termos de serviço
+        E prosseguir com a finalização da compra
+        E selecionar o meio de pagamento
+        Então irá avançar para a finalização da compra
+    
+    @checkout_terms_service
+    Cenário: Validar os termos de serviço do checkout
+        Quando marcar os termos de serviço
+        E prosseguir com a finalização da compra
+        Então deverá avançar para a página de pagamento
+        
+        

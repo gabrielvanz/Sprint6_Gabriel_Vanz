@@ -31,7 +31,7 @@ Funcionalidade: Login via E-mail
     Esquema do Cenário: Validar recuperação de senha
         Dado que esteja na página de autenticação
         Quando realizar a recuperação de senha com o "<email>"
-        Então devera retornar a "<msg>"
+        Então deverá retornar a "<msg>"
     
         Exemplos:
         |email              |msg                                                                    |

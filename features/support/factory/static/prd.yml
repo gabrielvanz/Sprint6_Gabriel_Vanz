@@ -15,4 +15,12 @@ user_for_login:
   email: 'teste@compass.com.br'
   password: '12345678'
 
+user_address:
+  name: 'João Luiz'
+  lastname: 'Lorenzo'
+  address: Rua 7 de abril
+  city: 'Paim Filho'
+  postalCode: '12345'
+  homePhone: '123456780'
+  mobilePhone: '123456789'
 
