@@ -28,7 +28,7 @@ Funcionalidade: Login via E-mail
         Então deverá avançar para a prossima etapa do Checkout
 
     @login_forgot_password
-    Esquema do Cenário: Validar recuperação de senha
+    Esquema do Cenário: Validar a recuperação de senha
         Dado que esteja na página de autenticação
         Quando realizar a recuperação de senha com o "<email>"
         Então deverá retornar a "<msg>"

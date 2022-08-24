@@ -11,12 +11,12 @@ Funcionalidade: Busca
         Dado que o produto tenha sido adicionado ao carrinho
     
     @cart_increase_product_quantity
-    Cenário: Aumentar a quantidade do produto no carrinho
+    Cenário: Validar incremento de produtos na página do carrinho
         Quando aumentar a quantidade do produto no carrinho
         Então deverá alterar a quantidade exibida no carrinho para "2"
 
     @cart_decrease_product_quantity
-    Cenário: Diminuir a quantidade do produto no carrinho
+    Cenário: Validar decremento de produtos na página do carrinho
         Quando diminuir a quantidade do produto no carrinho
         Então deverá remover o produto do carrinho
     

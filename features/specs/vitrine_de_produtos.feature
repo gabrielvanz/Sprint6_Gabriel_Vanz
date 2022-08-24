@@ -15,3 +15,4 @@ Funcionalidade: Vitrine de Produtos
     Cenário: Adicionar produto da vitrine ao carrinho
         Quando adicionar produto da vitrine ao carrinho
         Então o produto deverá ser adicionado ao carrinho com sucesso pela vitrine
+

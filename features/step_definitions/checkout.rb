@@ -41,7 +41,6 @@ Então('irá avançar para a finalização da compra') do
     expect(@checkout_page).to have_content "BANK-WIRE PAYMENT"
 end
 
-
 Quando('marcar os termos de serviço') do
     @checkout_page = Pages::Checkout.new
     @checkout_page.terms_of_service.click                         

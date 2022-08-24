@@ -17,3 +17,6 @@ end
 Então('o produto deverá ser adicionado ao carrinho com sucesso pela vitrine') do
     expect(@product_showcase.modal_cart).to have_content "Product successfully added to your shopping cart"
 end
+
+
+                                                                        

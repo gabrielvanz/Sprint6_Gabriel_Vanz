@@ -15,7 +15,7 @@ end
 
 Dado('que insira um e-mail válido') do
     @authentication_page = Pages::Authentication.new
-    @authentication_page.registration.input_email.set $user_email
+    @authentication_page.registration.input_email.set Factory::Dynamic.user_for_registering[:email]
 end
 
 Dado('clique em prosseguir com cadastro') do

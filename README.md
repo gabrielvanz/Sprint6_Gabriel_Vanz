@@ -11,17 +11,28 @@
 >As automações dos testes do fluxo de compra, são elas a busca, cadastro, login, finalização da compra, página do produto, vitrine de produtos e o carrinho, que estão listadas abaixo.
 
 ```bash
-@search
-  -> @search_for_product
-  -> @search_for_different_products
-  
-@registration
-  -> @registration_validate_only
-  -> @registration_validate
+@address_checkout
+  -> @address_checkout_edition_charge
+  -> @address_checkout_edition_delivery
+  -> @address_checkout_new
+
+@cart
+  -> @cart_increase_product_quantity
+  -> @cart_decrease_product_quantity
+  -> @cart_remove_product
+  -> @cart_remove_product_modal
+  -> @cart_page_checkout_validate
+  -> @cart_modal_checkout_validate
+
+@checkout
+  -> @checkout_validate
+  -> @checkout_payment_validate
+  -> @checkout_terms_service
 
 @login
-  -> @login_validate_only
-  -> @login_validate
+  -> @login_validate_home
+  -> @login_validate_checkout
+  -> @login_forgot_password
 
 @pdp
   -> @pdp_change_color
@@ -31,16 +42,21 @@
   -> @pdd_change_size
   -> @pdd_add_product_to_cart
 
+@products_comparation
+  -> @products_comparation_add
+  -> @products_comparation_remove
+
 @product_showcase
   -> @product_showcase_add_to_cart
+  
+@registration
+  -> @registration_email_validate
+  -> @registration_validate
 
-@cart
-  -> @cart_increase_product_quantity
-  -> @cart_decrease_product_quantity
-  -> @cart_remove_product
-  -> @cart_remove_product_modal
+@search
+  -> @search_for_product
+  -> @search_for_different_products
 
-@checkout
 ```
 
 <h3>Relacionados</h3>
@@ -151,7 +167,7 @@ cucumber -p default -t"nome"
 
 <h2>Agradecimentos</h2>
 
-<p>Queria agradecer aos colegas Bruno Silveira, Leonardo Moresco e Rhodrigo Lopes do programa de bolsas de Automação Web, que me ajudaram no desenvolvimento desse projeto.</p>
+<p>Queria agradecer ao colega Leonardo Moresco, do programa de bolsas de Automação Web, que me ajudou no desenvolvimento e teste desse projeto.</p>
   
 <br>
 
