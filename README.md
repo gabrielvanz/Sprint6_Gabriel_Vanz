@@ -4,11 +4,11 @@
 
 <h2>Sobre o projeto</h2>
 
-> Este projeto é referente a Sprint 5 do Programa de Bolsas Automação de Testes front-end com Ruby, Compass, cujo seu propósito é aplicar o conhecimento e técnicas para a realização de BDD's e automações de testes no site <a href="http://automationpractice.com/">Automation Practice</a>
+> Este projeto é referente a Sprint 6 do Programa de Bolsas Automação de Testes front-end com Ruby, Compass, cujo seu propósito é aplicar o conhecimento e técnicas para a realização de BDD's e automações de testes no site <a href="http://automationpractice.com/">Automation Practice</a>
 
 <h3 name="topo">Automações dos testes</h3>
 
->As automações dos testes do fluxo de compra, são elas a busca, cadastro, login, finalização da compra, página do produto, vitrine de produtos e o carrinho, que estão listadas abaixo.
+>As automações dos testes do fluxo de compra, são elas a busca, cadastro, login, finalização da compra, endereço no checkout, página do produto, vitrine de produtos e o carrinho, que estão listadas abaixo.
 
 ```bash
 @address_checkout
@@ -42,10 +42,6 @@
   -> @pdd_change_size
   -> @pdd_add_product_to_cart
 
-@products_comparation
-  -> @products_comparation_add
-  -> @products_comparation_remove
-
 @product_showcase
   -> @product_showcase_add_to_cart
   
@@ -54,7 +50,6 @@
   -> @registration_validate
 
 @search
-  -> @search_for_product
   -> @search_for_different_products
 
 ```
@@ -167,7 +162,7 @@ cucumber -p default -t"nome"
 
 <h2>Agradecimentos</h2>
 
-<p>Queria agradecer ao colega Leonardo Moresco, do programa de bolsas de Automação Web, que me ajudou no desenvolvimento e teste desse projeto.</p>
+<p>Queria agradecer aos colegas Leonardo Moresco e Bruno Silveira, do programa de bolsas de Automação Web, que me ajudaram no desenvolvimento e teste desse projeto.</p>
   
 <br>
 
