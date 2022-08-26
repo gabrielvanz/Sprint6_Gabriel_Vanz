@@ -2,7 +2,7 @@
 
 @regression
 @cart
-Funcionalidade: Busca
+Funcionalidade: Carrinho
     COMO um usuário do Ecommerce Automation Pratice 
     QUERO poder personalizar os produtos que irei comprar no carrinho
     PARA poder finalizar minhas compras
@@ -13,7 +13,7 @@ Funcionalidade: Busca
     @cart_increase_product_quantity
     Cenário: Validar incremento de produtos na página do carrinho
         Quando aumentar a quantidade do produto no carrinho
-        Então deverá alterar a quantidade exibida no carrinho para "2"
+        Então deverá alterar a quantidade exibida no carrinho
 
     @cart_decrease_product_quantity
     Cenário: Validar decremento de produtos na página do carrinho

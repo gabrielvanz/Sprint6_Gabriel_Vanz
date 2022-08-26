@@ -1,23 +1,24 @@
 Quando('aumentar a quantidade do produto no carrinho') do
-    sleep 1.5
+    @product_showcase.buy_exit.click
+    @product_showcase.cart_icon.click
     @cart_page = Pages::Cart.new
-    @cart_page.load
-    sleep 1
+    sleep 3
     @cart_page.increase_product.click
-    sleep 1.5
+    sleep 5
+    
 end
 
-Então('deverá alterar a quantidade exibida no carrinho para {string}') do |string|
+Então('deverá alterar a quantidade exibida no carrinho') do
     expect(@cart_page.cart_quantity_products_cartPage.value).to eql "2"
 end
 
 Quando('diminuir a quantidade do produto no carrinho') do
-    sleep 1.5
+    @product_showcase.buy_exit.click
+    @product_showcase.cart_icon.click
     @cart_page = Pages::Cart.new
-    @cart_page.load
-    sleep 1
+    sleep 3
     @cart_page.decrease_product.click
-    sleep 1.5
+    sleep 5
 end
 
 Então('deverá remover o produto do carrinho') do

@@ -10,10 +10,10 @@ Funcionalidade: Busca
 Contexto: 
     Dado que esteja na home
 
-@search_for_product
-Cenário: Validação da busca por produto existente
-    Quando realizar uma busca por um produto existente
-    Então deverão ser retornados resultados na busca
+# @search_for_product
+# Cenário: Validação da busca por produto existente
+#     Quando realizar uma busca por um produto existente
+#     Então deverão ser retornados resultados na busca
 
 @search_for_different_products
 Esquema do Cenário: Validar busca por produtos existentes

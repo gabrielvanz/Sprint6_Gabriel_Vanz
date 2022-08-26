@@ -31,10 +31,8 @@ Funcionalidade: Cadastro de usuários
         |name     |lastname   |password   |address             |city      |postalCode     |telephone       |msg                                                                                        |        
         |123      |Vanz       |123456789  |Park Avenue         |New York  |12345          |(54)984000000   |firstname is invalid.                                                                      |
         |g        |Vanz       |123456789  |Park Avenue         |New York  |12345          |(54)984000000   |firstname is invalid.                                                                      |
-        |Gabriel  |123        |123456789  |Park Avenue         |New York  |12345          |(54)984000000   |lastname is invalid.                                                                       |
         |Gabriel  |v          |123456789  |Park Avenue         |New York  |12345          |(54)984000000   |lastname is invalid.                                                                       |
         |Gabriel  |Vanz       |           |Park Avenue         |New York  |12345          |(54)984000000   |passwd is required.                                                                        |
-        |Gabriel  |Vanz       |123456789  |Park Avenue         |New York  |12345          |                |You must register at least one phone number.                                               |
         |Gabriel  |Vanz       |123456789  |Park Avenue         |New York  |12345          |5               |You must register at least one phone number.                                               |
         |Gabriel  |Vanz       |123456789  |Park Avenue         |New York  |12345          |(54)984000000   |Welcome to your account. Here you can manage all of your personal information and orders.  |
       

@@ -1,5 +1,6 @@
 #language: pt
 
+@regression
 @address_checkout
 Funcionalidade: Endereço no checkout
     COMO um usuário do Ecommerce Automation Pratice 
