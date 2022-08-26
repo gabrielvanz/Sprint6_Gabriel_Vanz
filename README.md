@@ -56,8 +56,8 @@
 
 <h3>Relacionados</h3>
 
-**<a href="#">Plano de Teste</a>**
-**<a href="#">Mapa Mental</a>**
+**<a href="https://www.canva.com/design/DAFJhWrTI2g/GKjRqZL2IC1VjcFYdX4ilg/view?utm_content=DAFJhWrTI2g&utm_campaign=designshare&utm_medium=link&utm_source=homepage_design_menu">Plano de Teste</a>**<br>
+**<a href="https://drive.google.com/file/d/1hgadsXDQp-UeTyIkwryFpzOWtEOmnVYW/view?usp=sharing">Mapa Mental</a>**
 
 <h2>Tecnologias utilizadas</h2>
 
