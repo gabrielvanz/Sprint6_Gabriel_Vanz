@@ -1,6 +1,5 @@
 #language: pt
 
-@regression
 @cart
 Funcionalidade: Carrinho
     COMO um usuário do Ecommerce Automation Pratice 

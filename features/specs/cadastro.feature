@@ -1,6 +1,5 @@
 #language: pt
 
-@regression
 @registration
 Funcionalidade: Cadastro de usuários
     COMO um usuário do Ecommerce Automation Pratice 

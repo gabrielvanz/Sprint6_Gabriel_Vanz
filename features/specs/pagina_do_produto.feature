@@ -1,6 +1,5 @@
 #language: pt
 
-@regression
 @pdp
 Funcionalidade: Página do Produto
     SENDO um usuário do Ecommerce Automation Pratice 
@@ -10,6 +9,7 @@ Funcionalidade: Página do Produto
     Contexto: Estar na página de um produto
         Dado que esteja na página de um produto existente
 
+    @regression
     @pdp_change_color
     Cenário: Validar alteração de cor do produto na PDP
         Quando alterar a cor do produto

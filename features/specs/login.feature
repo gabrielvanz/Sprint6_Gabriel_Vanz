@@ -1,6 +1,5 @@
 #language: pt
 
-@regression
 @login
 Funcionalidade: Login via E-mail
     COMO um usuário do Ecommerce Automation Pratice  

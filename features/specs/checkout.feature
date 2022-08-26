@@ -1,6 +1,5 @@
 #language: pt
 
-@regression
 @checkout
 Funcionalidade: Checkout
     COMO um usuário do Ecommerce Automation Pratice  
@@ -12,6 +11,7 @@ Funcionalidade: Checkout
         E que o produto tenha sido adicionado ao carrinho
         Quando fazer checkout do produto pelo carrinho
 
+    @regression
     @checkout_validate
     Cenário: Validar Checkout
         Quando marcar os termos de serviço

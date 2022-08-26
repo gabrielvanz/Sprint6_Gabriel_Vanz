@@ -1,6 +1,5 @@
 #language: pt
 
-@regression
 @product_showcase
 
 Funcionalidade: Vitrine de Produtos
